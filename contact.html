@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Summit Motors</title>
+<meta name="description" content="Contact Summit Motors. Demo contact form — does not submit." />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="contact">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">S<span>M</span></span> Summit Motors</a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="cars.html">Inventory</a>
+      <a href="compare.html">Compare</a>
+      <a href="services.html">Services</a>
+      <a href="financing.html">Financing</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a href="login.html">Sign in</a>
+    </nav>
+    <div class="header-cta"><a href="car-details.html" class="btn btn-navy btn-sm">Example listing</a></div>
+  </div>
+</header>
+
+<main class="container section">
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">Home</a> <span aria-hidden="true">/</span> <span>Contact</span>
+  </nav>
+
+  <div class="section-head">
+    <h1>Contact Summit Motors</h1>
+    <p class="muted small">Have a question about a vehicle, financing, or a test drive?</p>
+  </div>
+
+  <div class="details-layout">
+
+    <div>
+      <div class="alert alert-warn">
+        <strong>Heads up — this form does not submit.</strong>
+        This is a static site with no JavaScript and no backend server. When you click
+        <em>Send message</em>, your browser will try to submit the form to a URL that does not
+        exist, and nothing will be stored or emailed. That is intentional.
+        To make this form work you would need a hosted form service (Formspree, Netlify Forms,
+        Getform), a small backend, or a <code>mailto:</code> link.
+      </div>
+
+      <form class="card" action="#" method="post" novalidate>
+        <h2 style="margin-top:0">Send us a message</h2>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="c-name">Name</label>
+            <input id="c-name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="c-email">Email</label>
+            <input id="c-email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="c-phone">Phone <span class="muted small">(optional)</span></label>
+            <input id="c-phone" name="phone" type="tel" autocomplete="tel" />
+          </div>
+          <div class="field">
+            <label for="c-subject">Subject</label>
+            <select id="c-subject" name="subject" required>
+              <option value="">Choose a subject…</option>
+              <option>Vehicle inquiry</option>
+              <option>Schedule a test drive</option>
+              <option>Financing question</option>
+              <option>Trade-in appraisal</option>
+              <option>Service or maintenance</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field span-2">
+            <label for="c-vehicle">Vehicle of interest <span class="muted small">(optional)</span></label>
+            <input id="c-vehicle" name="vehicle" type="text" placeholder="e.g. 2021 Toyota Camry SE — Stock #SM-24-1001" />
+          </div>
+          <div class="field span-2">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" name="message" rows="6" required placeholder="How can we help?"></textarea>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:1rem">
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <button type="reset" class="btn btn-outline">Reset</button>
+        </div>
+
+        <p class="field-hint" style="margin-top:.75rem">
+          By submitting, you agree to be contacted about your inquiry. (Demo — nothing is submitted.)
+        </p>
+      </form>
+    </div>
+
+    <aside>
+      <div class="card">
+        <h2 style="margin-top:0">Visit us</h2>
+        <p>Summit Motors<br/>123 Ridgeline Avenue<br/>Denver, CO 80202</p>
+        <p><strong>Phone:</strong> (555) 010-2030<br/><strong>Email:</strong> hello@summitmotors.demo</p>
+        <h3>Hours</h3>
+        <ul class="feature-list" style="grid-template-columns:1fr">
+          <li>Mon–Fri: 9am – 7pm</li>
+          <li>Saturday: 9am – 6pm</li>
+          <li>Sunday: Closed</li>
+        </ul>
+      </div>
+
+      <div class="card" style="margin-top:1rem">
+        <h2 style="margin-top:0">Prefer email?</h2>
+        <p class="muted small">Without a backend, the best fallback is your own email client.</p>
+        <p><a class="btn btn-outline btn-block" href="mailto:hello@summitmotors.demo?subject=Inquiry%20from%20your%20website">Email Summit Motors</a></p>
+      </div>
+
+      <div class="card" style="margin-top:1rem">
+        <h2 style="margin-top:0">Inquiring about a specific car?</h2>
+        <p class="muted small">Use the <em>Inquire about this vehicle</em> button on any vehicle detail page.</p>
+        <a class="btn btn-navy btn-block" href="car-details.html">Open example listing</a>
+      </div>
+    </aside>
+
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><h4>Summit Motors</h4><p>123 Ridgeline Avenue<br/>Denver, CO 80202<br/>Demo dealership — not a real business.</p></div>
+    <div><h4>Shop</h4><ul><li><a href="cars.html">All inventory</a></li><li><a href="compare.html">Compare vehicles</a></li><li><a href="financing.html">Financing</a></li></ul></div>
+    <div><h4>Company</h4><ul><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li><li><a href="login.html">Sign in</a></li></ul></div>
+    <div><h4>Hours</h4><ul><li>Mon–Fri: 9am – 7pm</li><li>Sat: 9am – 6pm</li><li>Sun: Closed</li></ul></div>
+  </div>
+  <div class="container fine">© 2025 Summit Motors. Demo site. All vehicle details, prices, and photos are illustrative.</div>
+</footer>
+
+</body>
+</html>

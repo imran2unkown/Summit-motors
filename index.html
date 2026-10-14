@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Summit Motors — Quality pre-owned vehicles</title>
+<meta name="description" content="Shop quality pre-owned cars, SUVs, trucks, and EVs at Summit Motors. Demo dealership site. Prices in Kenyan shillings." />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="home">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">S<span>M</span></span>
+      Summit Motors
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="cars.html">Inventory</a>
+      <a href="compare.html">Compare</a>
+      <a href="services.html">Services</a>
+      <a href="financing.html">Financing</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Sign in</a>
+    </nav>
+    <div class="header-cta">
+      <a href="contact.html" class="btn btn-navy btn-sm">Book a test drive</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">Summit Motors · Demo dealership</p>
+      <h1>Find the right car, without the runaround.</h1>
+      <p class="lede">
+        Hand-picked pre-owned vehicles, transparent pricing in Kenyan shillings, and
+        financing made simple. Every listing on this site is <strong>demo data</strong>
+        for illustration.
+      </p>
+      <div class="hero-actions">
+        <a href="cars.html" class="btn btn-primary">Browse inventory</a>
+        <a href="financing.html" class="btn btn-outline">Estimate a payment</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container search-panel" aria-label="Vehicle search">
+    <form action="cars.html" method="get">
+      <div class="field">
+        <label for="s-make">Make</label>
+        <select id="s-make" name="make">
+          <option value="">Any make</option>
+          <option>Toyota</option>
+          <option>Honda</option>
+          <option>Ford</option>
+          <option>Tesla</option>
+          <option>Mazda</option>
+          <option>BMW</option>
+          <option>Subaru</option>
+          <option>Chevrolet</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="s-model">Model</label>
+        <input id="s-model" name="model" type="text" placeholder="e.g. Camry" />
+      </div>
+      <div class="field">
+        <label for="s-type">Vehicle type</label>
+        <select id="s-type" name="bodyType">
+          <option value="">Any type</option>
+          <option>Sedan</option>
+          <option>SUV</option>
+          <option>Truck</option>
+          <option>Wagon</option>
+          <option>Hatchback</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="s-price">Max price</label>
+        <select id="s-price" name="maxPrice">
+          <option value="">Any price</option>
+          <option value="2000000">Up to KSh 2,000,000</option>
+          <option value="2500000">Up to KSh 2,500,000</option>
+          <option value="3000000">Up to KSh 3,000,000</option>
+          <option value="3500000">Up to KSh 3,500,000</option>
+          <option value="4500000">Up to KSh 4,500,000</option>
+          <option value="6000000">Up to KSh 6,000,000</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Search inventory</button>
+    </form>
+  </section>
+
+  <section class="container section">
+    <div class="alert alert-info">
+      <strong>Demo notice:</strong> This is a static HTML/CSS site with no JavaScript and no backend.
+      The search form links to <a href="cars.html">cars.html</a> but does not filter — inventory is a fixed,
+      illustrative list. All prices are shown in Kenyan shillings (KSh).
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="section-head">
+      <h2>Featured vehicles</h2>
+      <a href="cars.html" class="btn btn-outline btn-sm">View all inventory</a>
+    </div>
+
+    <div class="vehicle-grid">
+
+      <article class="vehicle-card">
+        <a class="vehicle-media" href="car-details.html" aria-label="View details for 2021 Toyota Camry SE">
+          <img src="https://placehold.co/960x600/e8edf3/5a6b7d?text=2021+Toyota+Camry+SE" alt="Placeholder image for 2021 Toyota Camry SE — replace with a verified photo of this exact vehicle." />
+          <span class="vehicle-badge available">Available</span>
+        </a>
+        <div class="vehicle-body">
+          <a class="vehicle-title" href="car-details.html">2021 Toyota Camry SE</a>
+          <div class="vehicle-sub">Stock #SM-24-1001 · Sedan</div>
+          <div class="vehicle-price">KSh 3,050,000</div>
+          <ul class="spec-list">
+            <li>31,240 mi</li>
+            <li>Automatic</li>
+            <li>Gasoline</li>
+            <li>FWD</li>
+          </ul>
+          <div class="vehicle-actions">
+            <a class="btn btn-primary btn-sm" href="car-details.html">View details</a>
+            <a class="btn btn-outline btn-sm" href="compare.html">Compare</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="vehicle-card">
+        <a class="vehicle-media" href="car-details.html" aria-label="View details for 2020 Honda CR-V EX-L">
+          <img src="https://placehold.co/960x600/e8edf3/5a6b7d?text=2020+Honda+CR-V+EX-L" alt="Placeholder image for 2020 Honda CR-V EX-L — replace with a verified photo of this exact vehicle." />
+          <span class="vehicle-badge available">Available</span>
+        </a>
+        <div class="vehicle-body">
+          <a class="vehicle-title" href="car-details.html">2020 Honda CR-V EX-L</a>
+          <div class="vehicle-sub">Stock #SM-24-1002 · SUV</div>
+          <div class="vehicle-price">KSh 3,480,000</div>
+          <ul class="spec-list">
+            <li>41,810 mi</li>
+            <li>Automatic</li>
+            <li>Gasoline</li>
+            <li>AWD</li>
+          </ul>
+          <div class="vehicle-actions">
+            <a class="btn btn-primary btn-sm" href="car-details.html">View details</a>
+            <a class="btn btn-outline btn-sm" href="compare.html">Compare</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="vehicle-card">
+        <a class="vehicle-media" href="car-details.html" aria-label="View details for 2022 Ford F-150 XLT">
+          <img src="https://placehold.co/960x600/e8edf3/5a6b7d?text=2022+Ford+F-150+XLT" alt="Placeholder image for 2022 Ford F-150 XLT — replace with a verified photo of this exact vehicle." />
+          <span class="vehicle-badge available">Available</span>
+        </a>
+        <div class="vehicle-body">
+          <a class="vehicle-title" href="car-details.html">2022 Ford F-150 XLT</a>
+          <div class="vehicle-sub">Stock #SM-24-1003 · Truck</div>
+          <div class="vehicle-price">KSh 5,530,000</div>
+          <ul class="spec-list">
+            <li>22,410 mi</li>
+            <li>Automatic</li>
+            <li>Gasoline</li>
+            <li>4WD</li>
+          </ul>
+          <div class="vehicle-actions">
+            <a class="btn btn-primary btn-sm" href="car-details.html">View details</a>
+            <a class="btn btn-outline btn-sm" href="compare.html">Compare</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="section-head">
+      <h2>Why buy from Summit Motors</h2>
+    </div>
+    <div class="vehicle-grid">
+      <div class="card">
+        <h3>Inspected before listing</h3>
+        <p class="muted">Every vehicle passes a multi-point inspection before it appears online. (Demo description.)</p>
+      </div>
+      <div class="card">
+        <h3>Transparent pricing</h3>
+        <p class="muted">Prices are shown in Kenyan shillings. No hidden add-ons in the demo listings.</p>
+      </div>
+      <div class="card">
+        <h3>Financing made simple</h3>
+        <p class="muted">Estimate your monthly payment on the <a href="financing.html">financing page</a>.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Summit Motors</h4>
+      <p>123 Ridgeline Avenue<br/>Nairobi<br/>Demo dealership — not a real business.</p>
+    </div>
+    <div>
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="cars.html">All inventory</a></li>
+        <li><a href="compare.html">Compare vehicles</a></li>
+        <li><a href="financing.html">Financing</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Sign in</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <ul>
+        <li>Mon–Fri: 9am – 7pm</li>
+        <li>Sat: 9am – 6pm</li>
+        <li>Sun: Closed</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container fine">
+    © 2025 Summit Motors. Demo site. All vehicle details, prices, and photos are illustrative. Prices in KSh.
+  </div>
+</footer>
+
+</body>
+</html>
